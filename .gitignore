@@ -47,3 +47,4 @@ next-env.d.ts
 
 # internal agent notes
 .jarvise-team-board/
+*.log

@@ -1,8 +1,0 @@
-
-> temp-app@0.1.0 start
-> next start -p 1289
-
-▲ Next.js 16.2.9
-- Local:         http://localhost:1289
-- Network:       http://127.51.132.161:1289
-✓ Ready in 54ms
