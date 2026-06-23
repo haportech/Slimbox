@@ -65,9 +65,9 @@
 
 @layer components {
   .brutalist-card {
-    @apply border-2 border-foreground bg-card text-card-foreground shadow-[4px_4px_0px_0px_rgba(248,250,252,1)] transition-transform hover:-translate-y-1 hover:translate-x-1 hover:shadow-[0px_0px_0px_0px_rgba(248,250,252,1)];
+    @apply border-2 border-foreground bg-card text-card-foreground shadow-[4px_4px_0px_0px_rgba(248,250,252,1)] transition-all hover:-translate-y-1 hover:-translate-x-1 hover:shadow-[8px_8px_0px_0px_rgba(248,250,252,1)];
   }
   .brutalist-button {
-    @apply border-2 border-foreground bg-primary text-primary-foreground font-bold shadow-[4px_4px_0px_0px_rgba(248,250,252,1)] transition-transform hover:-translate-y-1 hover:translate-x-1 hover:shadow-[0px_0px_0px_0px_rgba(248,250,252,1)] active:translate-x-1 active:translate-y-1 active:shadow-none;
+    @apply border-2 border-foreground bg-primary text-primary-foreground font-bold shadow-[4px_4px_0px_0px_rgba(248,250,252,1)] transition-all hover:-translate-y-1 hover:-translate-x-1 hover:shadow-[8px_8px_0px_0px_rgba(248,250,252,1)] active:translate-x-1 active:translate-y-1 active:shadow-none;
   }
 }

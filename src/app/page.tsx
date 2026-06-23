@@ -26,7 +26,7 @@ export default async function Dashboard() {
     JOIN sessions s ON r.session_id = s.id
     ORDER BY r.created_at DESC
     LIMIT 20
-  `).all() as any[];
+  `).all() as { id: string, payload_diff: string, routing_decision: string, created_at: string, agent_id: string }[];
 
   return (
     <div className="flex h-screen w-full bg-background text-foreground flex-col md:flex-row overflow-hidden">
@@ -120,7 +120,7 @@ export default async function Dashboard() {
             <ScrollArea className="h-[400px] w-full p-4">
               {recentRequests.length === 0 ? (
                 <div className="flex items-center justify-center h-full text-muted-foreground p-10 text-center">
-                  <p>No sessions intercepted yet.<br/>Point your agent's API URL to <code>localhost:3000/api/proxy</code> to begin.</p>
+                  <p>No sessions intercepted yet.<br/>Point your agent&apos;s API URL to <code>localhost:3000/api/proxy</code> to begin.</p>
                 </div>
               ) : (
                 <div className="flex flex-col gap-3">

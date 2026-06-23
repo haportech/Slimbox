@@ -1,4 +1,5 @@
 // test-proxy.js
+// eslint-disable-next-line @typescript-eslint/no-require-imports
 const assert = require('assert');
 
 async function runTests() {

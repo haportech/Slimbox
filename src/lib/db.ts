@@ -28,8 +28,8 @@ try {
     FOREIGN KEY(session_id) REFERENCES sessions(id)
   );
 `);
-} catch (err: any) {
-  if (err.code !== 'SQLITE_BUSY') {
+} catch (err: unknown) {
+  if (err instanceof Error && (err as { code?: string }).code !== 'SQLITE_BUSY') {
     console.error('Database initialization error:', err);
   }
 }
